@@ -1,5 +1,5 @@
 ﻿Public Class FrmInicioSoftware
-    Private Sub FrmInicioSoftware_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub FrmInicioSoftware_Load(sender As Object, e As EventArgs)
         Timer1.Start()
     End Sub
 
@@ -19,4 +19,7 @@
         End If
     End Sub
 
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
 End Class
