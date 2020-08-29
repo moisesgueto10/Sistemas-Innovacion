@@ -1,0 +1,24 @@
+productos:
+agregar, actualizar
+
+servicios:
+agregar, actualizar
+
+clientes:
+agregar, actualizar
+
+usuarios:
+agregar, actualizar
+
+Ventas:
+agregar, actualizar.
+
+Venta_detalle_productos:
+agregar, actualizar y eliminar.
+
+Venta_detalle_servicios:
+agregar, actualizar y eliminar.
+
+proveedores:
+agregar, editar y eliminar.
+
