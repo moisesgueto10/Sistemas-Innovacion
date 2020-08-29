@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B779990-AD98-4836-82C1-6316F2CB7184}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>SakilaProject</RootNamespace>
+    <AssemblyName>SakilaProject</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SakilaProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SakilaProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.10\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\BD.vb" />
+    <Compile Include="Clases\Elementos.vb" />
+    <Compile Include="Clases\Funciones.vb" />
+    <Compile Include="ConfigAutor\FrmAutorEditar.Designer.vb">
+      <DependentUpon>FrmAutorEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigAutor\FrmAutorEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigAutor\FrmAutorEliminar.Designer.vb">
+      <DependentUpon>FrmAutorEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigAutor\FrmAutorEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigAutor\FrmAutorNuevo.Designer.vb">
+      <DependentUpon>FrmAutorNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigAutor\FrmAutorNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigAutor\GestionAutor.Designer.vb">
+      <DependentUpon>GestionAutor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigAutor\GestionAutor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigBibliotecario\frmBibliotecarioEditar.Designer.vb">
+      <DependentUpon>frmBibliotecarioEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigBibliotecario\frmBibliotecarioEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigBibliotecario\FrmBibliotecarioEliminar.Designer.vb">
+      <DependentUpon>FrmBibliotecarioEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigBibliotecario\FrmBibliotecarioEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigBibliotecario\FrmBibliotecarioNuevo.Designer.vb">
+      <DependentUpon>FrmBibliotecarioNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigBibliotecario\FrmBibliotecarioNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCampus\FrmCampusEditar.Designer.vb">
+      <DependentUpon>FrmCampusEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCampus\FrmCampusEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCampus\FrmCampusEliminar.Designer.vb">
+      <DependentUpon>FrmCampusEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCampus\FrmCampusEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCampus\FrmCampusNuevo.Designer.vb">
+      <DependentUpon>FrmCampusNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCampus\FrmCampusNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCampus\GestionCampus.Designer.vb">
+      <DependentUpon>GestionCampus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCampus\GestionCampus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCarreraPorCampus\FrmCarPorCampEditar.Designer.vb">
+      <DependentUpon>FrmCarPorCampEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCarreraPorCampus\FrmCarPorCampEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCarreraPorCampus\FrmCarPorCampEliminar.Designer.vb">
+      <DependentUpon>FrmCarPorCampEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCarreraPorCampus\FrmCarPorCampEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCarreraPorCampus\FrmCarPorCampNuevo.Designer.vb">
+      <DependentUpon>FrmCarPorCampNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCarreraPorCampus\FrmCarPorCampNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCarreraPorCampus\GestionCarreraPorCampus.Designer.vb">
+      <DependentUpon>GestionCarreraPorCampus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCarreraPorCampus\GestionCarreraPorCampus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCarrera\FrmCarreraEditar.Designer.vb">
+      <DependentUpon>FrmCarreraEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCarrera\FrmCarreraEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCarrera\FrmCarreraEliminar.Designer.vb">
+      <DependentUpon>FrmCarreraEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCarrera\FrmCarreraEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCarrera\FrmCarreraNuevo.Designer.vb">
+      <DependentUpon>FrmCarreraNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCarrera\FrmCarreraNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCarrera\GestionCarrera.Designer.vb">
+      <DependentUpon>GestionCarrera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCarrera\GestionCarrera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCiudades\FrmCiudadesEditar.Designer.vb">
+      <DependentUpon>FrmCiudadesEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCiudades\FrmCiudadesEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCiudades\FrmCiudadesEliminar.Designer.vb">
+      <DependentUpon>FrmCiudadesEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCiudades\FrmCiudadesEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCiudades\FrmCiudadesNuevo.Designer.vb">
+      <DependentUpon>FrmCiudadesNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCiudades\FrmCiudadesNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCiudades\GestionCiudades.Designer.vb">
+      <DependentUpon>GestionCiudades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCiudades\GestionCiudades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigEditorial\FrmEditorialEditar.Designer.vb">
+      <DependentUpon>FrmEditorialEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigEditorial\FrmEditorialEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigEditorial\FrmEditorialEliminar.Designer.vb">
+      <DependentUpon>FrmEditorialEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigEditorial\FrmEditorialEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigEditorial\FrmEditorialNuevo.Designer.vb">
+      <DependentUpon>FrmEditorialNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigEditorial\FrmEditorialNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigEditorial\GestionEditorial.Designer.vb">
+      <DependentUpon>GestionEditorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigEditorial\GestionEditorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigEjemplares\FrmEjemplarEditar.Designer.vb">
+      <DependentUpon>FrmEjemplarEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigEjemplares\FrmEjemplarEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigEjemplares\FrmEjemplarEliminar.Designer.vb">
+      <DependentUpon>FrmEjemplarEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigEjemplares\FrmEjemplarEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigEjemplares\FrmEjemplarNuevo.Designer.vb">
+      <DependentUpon>FrmEjemplarNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigEjemplares\FrmEjemplarNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPrestamos\FrmPrestamoEditar.Designer.vb">
+      <DependentUpon>FrmPrestamoEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPrestamos\FrmPrestamoEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPrestamos\FrmPrestamoEliminar.Designer.vb">
+      <DependentUpon>FrmPrestamoEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPrestamos\FrmPrestamoEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPrestamos\FrmPrestamoNuevo.Designer.vb">
+      <DependentUpon>FrmPrestamoNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPrestamos\FrmPrestamoNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPrestamos\FrmPrestamosPendientes.Designer.vb">
+      <DependentUpon>FrmPrestamosPendientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPrestamos\FrmPrestamosPendientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPrincipales\FrmAcercade.Designer.vb">
+      <DependentUpon>FrmAcercade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPrincipales\FrmAcercade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPrincipales\FrmInicioSoftware.Designer.vb">
+      <DependentUpon>FrmInicioSoftware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPrincipales\FrmInicioSoftware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigLibros\FrmLibrosEditar.Designer.vb">
+      <DependentUpon>FrmLibrosEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigLibros\FrmLibrosEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigLibros\FrmLibrosEliminar.Designer.vb">
+      <DependentUpon>FrmLibrosEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigLibros\FrmLibrosEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigLibros\FrmLibrosNuevo.Designer.vb">
+      <DependentUpon>FrmLibrosNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigLibros\FrmLibrosNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPrincipales\FrmLibrosYCatalogos.Designer.vb">
+      <DependentUpon>FrmLibrosYCatalogos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPrincipales\FrmLibrosYCatalogos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPrincipales\FrmMantenimiento.Designer.vb">
+      <DependentUpon>FrmMantenimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPrincipales\FrmMantenimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPrestamos\GestionPrestamos.Designer.vb">
+      <DependentUpon>GestionPrestamos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPrestamos\GestionPrestamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigAlumnos\FrmAlumnoEditar.Designer.vb">
+      <DependentUpon>FrmAlumnoEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigAlumnos\FrmAlumnoEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigAlumnos\FrmAlumnoEliminar.Designer.vb">
+      <DependentUpon>FrmAlumnoEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigAlumnos\FrmAlumnoEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigAlumnos\FrmAlumnoNuevo.Designer.vb">
+      <DependentUpon>FrmAlumnoNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigAlumnos\FrmAlumnoNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigBibliotecario\GestionBibliotecario.Designer.vb">
+      <DependentUpon>GestionBibliotecario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigBibliotecario\GestionBibliotecario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigEjemplares\GestionEjemplares.Designer.vb">
+      <DependentUpon>GestionEjemplares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigEjemplares\GestionEjemplares.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigLibros\GestionLibros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigLibros\GestionLibros.Designer.vb">
+      <DependentUpon>GestionLibros.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigAlumnos\GestionAlumnos.Designer.vb">
+      <DependentUpon>GestionAlumnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigAlumnos\GestionAlumnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPrincipales\LoginInicio.Designer.vb">
+      <DependentUpon>LoginInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPrincipales\LoginInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPrincipales\frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPrincipales\frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\Inicio.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigAutor\FrmAutorEditar.resx">
+      <DependentUpon>FrmAutorEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigAutor\FrmAutorEliminar.resx">
+      <DependentUpon>FrmAutorEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigAutor\FrmAutorNuevo.resx">
+      <DependentUpon>FrmAutorNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigAutor\GestionAutor.resx">
+      <DependentUpon>GestionAutor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigBibliotecario\frmBibliotecarioEditar.resx">
+      <DependentUpon>frmBibliotecarioEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigBibliotecario\FrmBibliotecarioEliminar.resx">
+      <DependentUpon>FrmBibliotecarioEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigBibliotecario\FrmBibliotecarioNuevo.resx">
+      <DependentUpon>FrmBibliotecarioNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCampus\FrmCampusEditar.resx">
+      <DependentUpon>FrmCampusEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCampus\FrmCampusEliminar.resx">
+      <DependentUpon>FrmCampusEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCampus\FrmCampusNuevo.resx">
+      <DependentUpon>FrmCampusNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCampus\GestionCampus.resx">
+      <DependentUpon>GestionCampus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCarreraPorCampus\FrmCarPorCampEditar.resx">
+      <DependentUpon>FrmCarPorCampEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCarreraPorCampus\FrmCarPorCampEliminar.resx">
+      <DependentUpon>FrmCarPorCampEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCarreraPorCampus\FrmCarPorCampNuevo.resx">
+      <DependentUpon>FrmCarPorCampNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCarreraPorCampus\GestionCarreraPorCampus.resx">
+      <DependentUpon>GestionCarreraPorCampus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCarrera\FrmCarreraEditar.resx">
+      <DependentUpon>FrmCarreraEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCarrera\FrmCarreraEliminar.resx">
+      <DependentUpon>FrmCarreraEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCarrera\FrmCarreraNuevo.resx">
+      <DependentUpon>FrmCarreraNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCarrera\GestionCarrera.resx">
+      <DependentUpon>GestionCarrera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCiudades\FrmCiudadesEditar.resx">
+      <DependentUpon>FrmCiudadesEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCiudades\FrmCiudadesEliminar.resx">
+      <DependentUpon>FrmCiudadesEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCiudades\FrmCiudadesNuevo.resx">
+      <DependentUpon>FrmCiudadesNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCiudades\GestionCiudades.resx">
+      <DependentUpon>GestionCiudades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigEditorial\FrmEditorialEditar.resx">
+      <DependentUpon>FrmEditorialEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigEditorial\FrmEditorialEliminar.resx">
+      <DependentUpon>FrmEditorialEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigEditorial\FrmEditorialNuevo.resx">
+      <DependentUpon>FrmEditorialNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigEditorial\GestionEditorial.resx">
+      <DependentUpon>GestionEditorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigEjemplares\FrmEjemplarEditar.resx">
+      <DependentUpon>FrmEjemplarEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigEjemplares\FrmEjemplarEliminar.resx">
+      <DependentUpon>FrmEjemplarEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigEjemplares\FrmEjemplarNuevo.resx">
+      <DependentUpon>FrmEjemplarNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPrestamos\FrmPrestamoEditar.resx">
+      <DependentUpon>FrmPrestamoEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPrestamos\FrmPrestamoEliminar.resx">
+      <DependentUpon>FrmPrestamoEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPrestamos\FrmPrestamoNuevo.resx">
+      <DependentUpon>FrmPrestamoNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPrestamos\FrmPrestamosPendientes.resx">
+      <DependentUpon>FrmPrestamosPendientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPrincipales\FrmAcercade.resx">
+      <DependentUpon>FrmAcercade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPrincipales\FrmInicioSoftware.resx">
+      <DependentUpon>FrmInicioSoftware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigLibros\FrmLibrosEditar.resx">
+      <DependentUpon>FrmLibrosEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigLibros\FrmLibrosEliminar.resx">
+      <DependentUpon>FrmLibrosEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigLibros\FrmLibrosNuevo.resx">
+      <DependentUpon>FrmLibrosNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPrincipales\FrmLibrosYCatalogos.resx">
+      <DependentUpon>FrmLibrosYCatalogos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPrincipales\FrmMantenimiento.resx">
+      <DependentUpon>FrmMantenimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPrestamos\GestionPrestamos.resx">
+      <DependentUpon>GestionPrestamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigAlumnos\FrmAlumnoEditar.resx">
+      <DependentUpon>FrmAlumnoEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigAlumnos\FrmAlumnoEliminar.resx">
+      <DependentUpon>FrmAlumnoEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigAlumnos\FrmAlumnoNuevo.resx">
+      <DependentUpon>FrmAlumnoNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigBibliotecario\GestionBibliotecario.resx">
+      <DependentUpon>GestionBibliotecario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigEjemplares\GestionEjemplares.resx">
+      <DependentUpon>GestionEjemplares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigAlumnos\GestionAlumnos.resx">
+      <DependentUpon>GestionAlumnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPrincipales\LoginInicio.resx">
+      <DependentUpon>LoginInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPrincipales\frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigLibros\GestionLibros.resx">
+      <DependentUpon>GestionLibros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
