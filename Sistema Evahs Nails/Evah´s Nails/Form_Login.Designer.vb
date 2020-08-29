@@ -193,7 +193,7 @@ Partial Class Form_Login
         Me.Name = "Form_Login"
         Me.Opacity = 0.9R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "Form_Login"
         Me.TitleBar.ResumeLayout(False)
         Me.TitleBar.PerformLayout()
         CType(Me.btn_Minimize, System.ComponentModel.ISupportInitialize).EndInit()
