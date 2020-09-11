@@ -4,11 +4,15 @@
             Dim funciones As New FMostrarClientes
             Dim logica As New VClientes
 
-            logica.gNombre = txt_Nombre.Text
-            logica.gDireccion = txt_Direccion.Text
-            logica.gTelefono = txt_Telefono.Text
-            logica.gIdentificacion = txt_Identificacion.Text
-            logica.gFecha_Registro = box_Fecha_Registro.Value.ToString
+            If txt_Nombre.Text = "" Or txt_Identificacion.Text = "" Then
+                MsgBox("¡DEBE RELLENAR LOS CAMPOS!")
+            Else
+                logica.gNombre = txt_Nombre.Text
+                logica.gDireccion = txt_Direccion.Text
+                logica.gTelefono = txt_Telefono.Text
+                logica.gIdentificacion = txt_Identificacion.Text
+                logica.gFecha_Registro = box_Fecha_Registro.Value.ToString
+            End If
 
             If funciones.FNuevoCliente(logica) Then
                 MsgBox("¡AGREGADO CORRECTAMENTE!")
@@ -16,7 +20,7 @@
                 Form_Registro_Cliente.Mostrar()
             End If
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MsgBox("NO SE REALIZO EL REGISTRO")
         End Try
     End Sub
 End Class
