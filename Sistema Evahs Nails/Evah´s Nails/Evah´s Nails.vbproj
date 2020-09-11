@@ -73,16 +73,37 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form_Login.Designer.vb">
+    <Compile Include="Evahs_NailsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Evahs_NailsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Funciones\FConexion.vb" />
+    <Compile Include="Funciones\FMostrarClientes.vb" />
+    <Compile Include="Logica\VClientes.vb" />
+    <Compile Include="Presentacion\Form_Login.Designer.vb">
       <DependentUpon>Form_Login.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form_Login.vb">
+    <Compile Include="Presentacion\Form_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Form_Nuevo_Cliente.Designer.vb">
+      <DependentUpon>Form_Nuevo_Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Form_Nuevo_Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Form_Registro_Cliente.Designer.vb">
+      <DependentUpon>Form_Registro_Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Form_Registro_Cliente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -96,8 +117,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form_Login.resx">
+    <EmbeddedResource Include="Presentacion\Form_Login.resx">
       <DependentUpon>Form_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Form_Nuevo_Cliente.resx">
+      <DependentUpon>Form_Nuevo_Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Form_Registro_Cliente.resx">
+      <DependentUpon>Form_Registro_Cliente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -107,6 +134,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Evahs_NailsDataSet.xsc">
+      <DependentUpon>Evahs_NailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Evahs_NailsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Evahs_NailsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Evahs_NailsDataSet.xss">
+      <DependentUpon>Evahs_NailsDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -116,7 +154,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.png" />
@@ -130,5 +167,6 @@
   <ItemGroup>
     <None Include="Resources\logo1.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

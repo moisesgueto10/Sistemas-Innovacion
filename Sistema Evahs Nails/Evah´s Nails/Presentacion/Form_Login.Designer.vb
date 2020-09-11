@@ -134,9 +134,9 @@ Partial Class Form_Login
         Me.cBox_MostrarContraseña.ForeColor = System.Drawing.Color.DarkViolet
         Me.cBox_MostrarContraseña.Location = New System.Drawing.Point(48, 427)
         Me.cBox_MostrarContraseña.Name = "cBox_MostrarContraseña"
-        Me.cBox_MostrarContraseña.Size = New System.Drawing.Size(118, 17)
+        Me.cBox_MostrarContraseña.Size = New System.Drawing.Size(102, 17)
         Me.cBox_MostrarContraseña.TabIndex = 6
-        Me.cBox_MostrarContraseña.Text = "Mostrar Contraseña"
+        Me.cBox_MostrarContraseña.Text = "Show Password"
         Me.cBox_MostrarContraseña.UseVisualStyleBackColor = True
         '
         'Label3
