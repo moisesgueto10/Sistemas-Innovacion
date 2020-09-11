@@ -1,11 +1,11 @@
 ﻿Imports System.Data.SqlClient
-Public Class FMostrarClientes
+Public Class FMostrarServicios
     Inherits FConexion
     Dim cmd As New SqlCommand
-    Public Function FnMostrarClientes() As DataTable
+    Public Function FnMostrarServicios() As DataTable
         Try
             FnConectado()
-            cmd = New SqlCommand("MostrarClientes")
+            cmd = New SqlCommand("MostrarServicios")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
@@ -28,34 +28,28 @@ Public Class FMostrarClientes
     Sub BusquedaDinamica(ByVal busqueda As String, ByVal dgv As DataGridView)
         Try
             FnConectado()
-            Dim da As New SqlDataAdapter("Select * from Clientes where (Id_Cliente like '" & busqueda + "%" & "') Or (Nombre_Completo like '" & "%" + busqueda + "%" & "')", cnn)
+            Dim da As New SqlDataAdapter("Select * from Servicios where (Id_Servicio like '" & busqueda + "%" & "') Or (Nombre_Servicio like '" & "%" + busqueda + "%" & "')", cnn)
             Dim dt = New DataTable
             da.Fill(dt)
             dgv.DataSource = dt
             dgv.Columns(0).HeaderText = "ID"
-            dgv.Columns(1).HeaderText = "NOMBRE COMPLETO"
-            dgv.Columns(2).HeaderText = "DIRECCION"
-            dgv.Columns(3).HeaderText = "TELEFONO"
-            dgv.Columns(4).HeaderText = "IDENTIFICACION"
-            dgv.Columns(5).HeaderText = "FECHA DE REGISTRO"
+            dgv.Columns(1).HeaderText = "NOMBRE SERVICIO"
+            dgv.Columns(2).HeaderText = "DESCRIPCION"
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
     End Sub
 
-    Public Function FNuevoCliente(ByRef dts As VClientes) As Boolean
+    Public Function FNuevoServicio(ByRef dts As VServicios) As Boolean
         Try
             FnConectado()
-            cmd = New SqlCommand("ModificarClientes")
+            cmd = New SqlCommand("ModificarServicios")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-            cmd.Parameters.AddWithValue("@Id_Cliente", dts.gId)
-            cmd.Parameters.AddWithValue("@Nombre_Completo", dts.gNombre)
-            cmd.Parameters.AddWithValue("@Direccion", dts.gDireccion)
-            cmd.Parameters.AddWithValue("@Telefono", dts.gTelefono)
-            cmd.Parameters.AddWithValue("@Identificacion", dts.gIdentificacion)
-            cmd.Parameters.AddWithValue("@Fecha_Registro", dts.gFecha_Registro)
+            cmd.Parameters.AddWithValue("@Id_Servicio", dts.gId)
+            cmd.Parameters.AddWithValue("@Nombre_Servicio", dts.gNombre)
+            cmd.Parameters.AddWithValue("@Descripcion_Servicio", dts.gDescripcion)
 
             If cmd.ExecuteNonQuery Then
                 Return True

@@ -22,6 +22,11 @@ Evah´s Nails
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:Evah_s_Nails.My.Resources.Resources.guardar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Evah_s_Nails.My.Resources.Resources.icon_Cerrar">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -98,6 +103,71 @@ Update Order Option
 </summary>
 </member>
 <member name="T:Evah_s_Nails.Evahs_NailsDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Evah_s_Nails.Evahs_NailsDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Evah_s_Nails.Evahs_NailsDataSet1.ServiciosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Evah_s_Nails.Evahs_NailsDataSet1.ServiciosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Evah_s_Nails.Evahs_NailsDataSet1.ServiciosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Evah_s_Nails.Evahs_NailsDataSet1TableAdapters.ServiciosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Evah_s_Nails.Evahs_NailsDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Evah_s_Nails.Evahs_NailsDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Evah_s_Nails.Evahs_NailsDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Evah_s_Nails.Evahs_NailsDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Evah_s_Nails.Evahs_NailsDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Evah_s_Nails.Evahs_NailsDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Evah_s_Nails.Evahs_NailsDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Evah_s_Nails.Evahs_NailsDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Evah_s_Nails.Evahs_NailsDataSet1TableAdapters.TableAdapterManager.UpdateAll(Evah_s_Nails.Evahs_NailsDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Evah_s_Nails.Evahs_NailsDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Evah_s_Nails.Evahs_NailsDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
 <summary>
 Used to sort self-referenced table's rows
 </summary>

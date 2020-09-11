@@ -7,22 +7,12 @@ Public Class Form_Registro_Cliente
         Mostrar()
     End Sub
 
-    Sub SubConexionBD()
-        Try
-            Dim funcion As New FConexion
-            funcion.FnConectado()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-    End Sub
-
     Public Sub Mostrar()
         Try
             Dim func As New FMostrarClientes
             dt = func.FnMostrarClientes
 
             If dt.Rows.Count <> 0 Then
-                data_TablaClientes.DataSource = dt
                 data_TablaClientes.DataSource = dt
                 data_TablaClientes.Columns(0).HeaderText = "ID"
                 data_TablaClientes.Columns(1).HeaderText = "NOMBRE COMPLETO"
@@ -70,10 +60,6 @@ Public Class Form_Registro_Cliente
         Form_Editar_Cliente.txt_Telefono.Text = data_TablaClientes.Item(3, i).Value().ToString
         Form_Editar_Cliente.txt_Identificacion.Text = data_TablaClientes.Item(4, i).Value().ToString
         Form_Editar_Cliente.box_Fecha_Registro.Value() = data_TablaClientes.Item(5, i).Value().ToString
-
-    End Sub
-
-    Private Sub data_TablaClientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles data_TablaClientes.CellContentClick
 
     End Sub
 End Class
