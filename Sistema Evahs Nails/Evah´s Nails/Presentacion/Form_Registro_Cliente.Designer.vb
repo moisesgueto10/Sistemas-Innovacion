@@ -23,56 +23,135 @@ Partial Class Form_Registro_Cliente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Registro_Cliente))
         Me.lbl_BuscarCliente = New System.Windows.Forms.Label()
         Me.txt_Buscar = New System.Windows.Forms.TextBox()
         Me.data_TablaClientes = New System.Windows.Forms.DataGridView()
-        Me.btn_Nuevo = New System.Windows.Forms.Button()
-        Me.btn_Editar = New System.Windows.Forms.Button()
-        Me.lbl_TotalRegistros = New System.Windows.Forms.Label()
-        Me.Evahs_NailsDataSet = New Evah_s_Nails.Evahs_NailsDataSet()
-        Me.ClientesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ClientesTableAdapter = New Evah_s_Nails.Evahs_NailsDataSetTableAdapters.ClientesTableAdapter()
         Me.IdClienteDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NombreCompletoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DireccionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TelefonoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IdentificacionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FechaRegistroDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClientesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Evahs_NailsDataSet = New Evah_s_Nails.Evahs_NailsDataSet()
+        Me.btn_Nuevo = New System.Windows.Forms.Button()
+        Me.btn_Editar = New System.Windows.Forms.Button()
+        Me.lbl_TotalRegistros = New System.Windows.Forms.Label()
+        Me.ClientesTableAdapter = New Evah_s_Nails.Evahs_NailsDataSetTableAdapters.ClientesTableAdapter()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.data_TablaClientes, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Evahs_NailsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Evahs_NailsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbl_BuscarCliente
         '
         Me.lbl_BuscarCliente.AutoSize = True
         Me.lbl_BuscarCliente.Font = New System.Drawing.Font("Articulate", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_BuscarCliente.Location = New System.Drawing.Point(57, 71)
+        Me.lbl_BuscarCliente.Location = New System.Drawing.Point(236, 92)
         Me.lbl_BuscarCliente.Name = "lbl_BuscarCliente"
-        Me.lbl_BuscarCliente.Size = New System.Drawing.Size(155, 23)
+        Me.lbl_BuscarCliente.Size = New System.Drawing.Size(168, 23)
         Me.lbl_BuscarCliente.TabIndex = 0
-        Me.lbl_BuscarCliente.Text = "Buscar Cliente ..."
+        Me.lbl_BuscarCliente.Text = "BUSCAR CLIENTE:"
         '
         'txt_Buscar
         '
         Me.txt_Buscar.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_Buscar.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.txt_Buscar.Location = New System.Drawing.Point(226, 68)
+        Me.txt_Buscar.Location = New System.Drawing.Point(407, 90)
         Me.txt_Buscar.Name = "txt_Buscar"
-        Me.txt_Buscar.Size = New System.Drawing.Size(590, 26)
+        Me.txt_Buscar.Size = New System.Drawing.Size(342, 26)
         Me.txt_Buscar.TabIndex = 1
         '
         'data_TablaClientes
         '
+        Me.data_TablaClientes.AllowUserToAddRows = False
         Me.data_TablaClientes.AutoGenerateColumns = False
+        Me.data_TablaClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.data_TablaClientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
         Me.data_TablaClientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
         Me.data_TablaClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.data_TablaClientes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdClienteDataGridViewTextBoxColumn, Me.NombreCompletoDataGridViewTextBoxColumn, Me.DireccionDataGridViewTextBoxColumn, Me.TelefonoDataGridViewTextBoxColumn, Me.IdentificacionDataGridViewTextBoxColumn, Me.FechaRegistroDataGridViewTextBoxColumn})
         Me.data_TablaClientes.DataSource = Me.ClientesBindingSource
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Pink
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Firebrick
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.data_TablaClientes.DefaultCellStyle = DataGridViewCellStyle1
         Me.data_TablaClientes.Location = New System.Drawing.Point(12, 169)
+        Me.data_TablaClientes.MultiSelect = False
         Me.data_TablaClientes.Name = "data_TablaClientes"
+        Me.data_TablaClientes.ReadOnly = True
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.GhostWhite
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.data_TablaClientes.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.data_TablaClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.data_TablaClientes.Size = New System.Drawing.Size(1121, 534)
         Me.data_TablaClientes.TabIndex = 2
+        '
+        'IdClienteDataGridViewTextBoxColumn
+        '
+        Me.IdClienteDataGridViewTextBoxColumn.DataPropertyName = "Id_Cliente"
+        Me.IdClienteDataGridViewTextBoxColumn.HeaderText = "ID"
+        Me.IdClienteDataGridViewTextBoxColumn.Name = "IdClienteDataGridViewTextBoxColumn"
+        Me.IdClienteDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'NombreCompletoDataGridViewTextBoxColumn
+        '
+        Me.NombreCompletoDataGridViewTextBoxColumn.DataPropertyName = "Nombre_Completo"
+        Me.NombreCompletoDataGridViewTextBoxColumn.HeaderText = "Nombre Completo"
+        Me.NombreCompletoDataGridViewTextBoxColumn.Name = "NombreCompletoDataGridViewTextBoxColumn"
+        Me.NombreCompletoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DireccionDataGridViewTextBoxColumn
+        '
+        Me.DireccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion"
+        Me.DireccionDataGridViewTextBoxColumn.HeaderText = "Direccion"
+        Me.DireccionDataGridViewTextBoxColumn.Name = "DireccionDataGridViewTextBoxColumn"
+        Me.DireccionDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'TelefonoDataGridViewTextBoxColumn
+        '
+        Me.TelefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono"
+        Me.TelefonoDataGridViewTextBoxColumn.HeaderText = "Telefono"
+        Me.TelefonoDataGridViewTextBoxColumn.Name = "TelefonoDataGridViewTextBoxColumn"
+        Me.TelefonoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'IdentificacionDataGridViewTextBoxColumn
+        '
+        Me.IdentificacionDataGridViewTextBoxColumn.DataPropertyName = "Identificacion"
+        Me.IdentificacionDataGridViewTextBoxColumn.HeaderText = "Identificacion"
+        Me.IdentificacionDataGridViewTextBoxColumn.Name = "IdentificacionDataGridViewTextBoxColumn"
+        Me.IdentificacionDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'FechaRegistroDataGridViewTextBoxColumn
+        '
+        Me.FechaRegistroDataGridViewTextBoxColumn.DataPropertyName = "Fecha_Registro"
+        Me.FechaRegistroDataGridViewTextBoxColumn.HeaderText = "Fecha de Registro"
+        Me.FechaRegistroDataGridViewTextBoxColumn.Name = "FechaRegistroDataGridViewTextBoxColumn"
+        Me.FechaRegistroDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'ClientesBindingSource
+        '
+        Me.ClientesBindingSource.DataMember = "Clientes"
+        Me.ClientesBindingSource.DataSource = Me.Evahs_NailsDataSet
+        '
+        'Evahs_NailsDataSet
+        '
+        Me.Evahs_NailsDataSet.DataSetName = "Evahs_NailsDataSet"
+        Me.Evahs_NailsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'btn_Nuevo
         '
@@ -104,68 +183,19 @@ Partial Class Form_Registro_Cliente
         Me.lbl_TotalRegistros.TabIndex = 5
         Me.lbl_TotalRegistros.Text = "Total de Registros"
         '
-        'Evahs_NailsDataSet
-        '
-        Me.Evahs_NailsDataSet.DataSetName = "Evahs_NailsDataSet"
-        Me.Evahs_NailsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ClientesBindingSource
-        '
-        Me.ClientesBindingSource.DataMember = "Clientes"
-        Me.ClientesBindingSource.DataSource = Me.Evahs_NailsDataSet
-        '
         'ClientesTableAdapter
         '
         Me.ClientesTableAdapter.ClearBeforeFill = True
         '
-        'IdClienteDataGridViewTextBoxColumn
+        'PictureBox1
         '
-        Me.IdClienteDataGridViewTextBoxColumn.DataPropertyName = "Id_Cliente"
-        Me.IdClienteDataGridViewTextBoxColumn.Frozen = True
-        Me.IdClienteDataGridViewTextBoxColumn.HeaderText = "ID"
-        Me.IdClienteDataGridViewTextBoxColumn.Name = "IdClienteDataGridViewTextBoxColumn"
-        Me.IdClienteDataGridViewTextBoxColumn.ReadOnly = True
-        Me.IdClienteDataGridViewTextBoxColumn.Width = 130
-        '
-        'NombreCompletoDataGridViewTextBoxColumn
-        '
-        Me.NombreCompletoDataGridViewTextBoxColumn.DataPropertyName = "Nombre_Completo"
-        Me.NombreCompletoDataGridViewTextBoxColumn.Frozen = True
-        Me.NombreCompletoDataGridViewTextBoxColumn.HeaderText = "Nombre Completo"
-        Me.NombreCompletoDataGridViewTextBoxColumn.Name = "NombreCompletoDataGridViewTextBoxColumn"
-        Me.NombreCompletoDataGridViewTextBoxColumn.Width = 300
-        '
-        'DireccionDataGridViewTextBoxColumn
-        '
-        Me.DireccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion"
-        Me.DireccionDataGridViewTextBoxColumn.Frozen = True
-        Me.DireccionDataGridViewTextBoxColumn.HeaderText = "Direccion"
-        Me.DireccionDataGridViewTextBoxColumn.Name = "DireccionDataGridViewTextBoxColumn"
-        Me.DireccionDataGridViewTextBoxColumn.Width = 150
-        '
-        'TelefonoDataGridViewTextBoxColumn
-        '
-        Me.TelefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono"
-        Me.TelefonoDataGridViewTextBoxColumn.Frozen = True
-        Me.TelefonoDataGridViewTextBoxColumn.HeaderText = "Telefono"
-        Me.TelefonoDataGridViewTextBoxColumn.Name = "TelefonoDataGridViewTextBoxColumn"
-        Me.TelefonoDataGridViewTextBoxColumn.Width = 150
-        '
-        'IdentificacionDataGridViewTextBoxColumn
-        '
-        Me.IdentificacionDataGridViewTextBoxColumn.DataPropertyName = "Identificacion"
-        Me.IdentificacionDataGridViewTextBoxColumn.Frozen = True
-        Me.IdentificacionDataGridViewTextBoxColumn.HeaderText = "Identificacion"
-        Me.IdentificacionDataGridViewTextBoxColumn.Name = "IdentificacionDataGridViewTextBoxColumn"
-        Me.IdentificacionDataGridViewTextBoxColumn.Width = 200
-        '
-        'FechaRegistroDataGridViewTextBoxColumn
-        '
-        Me.FechaRegistroDataGridViewTextBoxColumn.DataPropertyName = "Fecha_Registro"
-        Me.FechaRegistroDataGridViewTextBoxColumn.Frozen = True
-        Me.FechaRegistroDataGridViewTextBoxColumn.HeaderText = "Fecha de Registro"
-        Me.FechaRegistroDataGridViewTextBoxColumn.Name = "FechaRegistroDataGridViewTextBoxColumn"
-        Me.FechaRegistroDataGridViewTextBoxColumn.Width = 150
+        Me.PictureBox1.Image = Global.Evah_s_Nails.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(170, 125)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
         '
         'Form_Registro_Cliente
         '
@@ -173,6 +203,7 @@ Partial Class Form_Registro_Cliente
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.Thistle
         Me.ClientSize = New System.Drawing.Size(1360, 706)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lbl_TotalRegistros)
         Me.Controls.Add(Me.btn_Editar)
         Me.Controls.Add(Me.btn_Nuevo)
@@ -180,6 +211,7 @@ Partial Class Form_Registro_Cliente
         Me.Controls.Add(Me.txt_Buscar)
         Me.Controls.Add(Me.lbl_BuscarCliente)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimumSize = New System.Drawing.Size(850, 520)
         Me.Name = "Form_Registro_Cliente"
@@ -187,8 +219,9 @@ Partial Class Form_Registro_Cliente
         Me.Text = "Registro de Cliente"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.data_TablaClientes, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Evahs_NailsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Evahs_NailsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -209,4 +242,5 @@ Partial Class Form_Registro_Cliente
     Friend WithEvents TelefonoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents IdentificacionDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents FechaRegistroDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

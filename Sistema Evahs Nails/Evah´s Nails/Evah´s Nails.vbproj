@@ -81,6 +81,12 @@
     <Compile Include="Funciones\FConexion.vb" />
     <Compile Include="Funciones\FMostrarClientes.vb" />
     <Compile Include="Logica\VClientes.vb" />
+    <Compile Include="Presentacion\Form_Editar_Cliente.Designer.vb">
+      <DependentUpon>Form_Editar_Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Form_Editar_Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\Form_Login.Designer.vb">
       <DependentUpon>Form_Login.vb</DependentUpon>
     </Compile>
@@ -117,6 +123,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Presentacion\Form_Editar_Cliente.resx">
+      <DependentUpon>Form_Editar_Cliente.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Form_Login.resx">
       <DependentUpon>Form_Login.vb</DependentUpon>
     </EmbeddedResource>
