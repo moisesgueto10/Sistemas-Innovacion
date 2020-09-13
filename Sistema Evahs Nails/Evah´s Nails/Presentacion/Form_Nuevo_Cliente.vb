@@ -23,4 +23,44 @@
             MsgBox("NO SE REALIZO EL REGISTRO")
         End Try
     End Sub
+
+    Private Sub box_Fecha_Registro_ValueChanged(sender As Object, e As EventArgs) Handles box_Fecha_Registro.ValueChanged
+
+    End Sub
+
+    Private Sub txt_Direccion_TextChanged(sender As Object, e As EventArgs) Handles txt_Direccion.TextChanged
+
+    End Sub
+
+    Private Sub txt_Identificacion_TextChanged(sender As Object, e As EventArgs) Handles txt_Identificacion.TextChanged
+
+    End Sub
+
+    Private Sub txt_Telefono_TextChanged(sender As Object, e As EventArgs) Handles txt_Telefono.TextChanged
+
+    End Sub
+
+    Private Sub txt_Nombre_TextChanged(sender As Object, e As EventArgs) Handles txt_Nombre.TextChanged
+
+    End Sub
+
+    Private Sub lbl_Fecha_Registro_Click(sender As Object, e As EventArgs) Handles lbl_Fecha_Registro.Click
+
+    End Sub
+
+    Private Sub lbl_Direccion_Click(sender As Object, e As EventArgs) Handles lbl_Direccion.Click
+
+    End Sub
+
+    Private Sub lbl_Identificacion_Click(sender As Object, e As EventArgs) Handles lbl_Identificacion.Click
+
+    End Sub
+
+    Private Sub lbl_Telefono_Click(sender As Object, e As EventArgs) Handles lbl_Telefono.Click
+
+    End Sub
+
+    Private Sub lbl_Nombre_Click(sender As Object, e As EventArgs) Handles lbl_Nombre.Click
+
+    End Sub
 End Class

@@ -45,6 +45,7 @@ Partial Class Form_Registro_Producto
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btn_Guardar = New System.Windows.Forms.Button()
         Me.btn_Editar = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
         CType(Me.dgv_Tabla_Producto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -62,18 +63,18 @@ Partial Class Form_Registro_Producto
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgv_Tabla_Producto.DefaultCellStyle = DataGridViewCellStyle1
-        Me.dgv_Tabla_Producto.Location = New System.Drawing.Point(12, 77)
+        Me.dgv_Tabla_Producto.Location = New System.Drawing.Point(12, 151)
         Me.dgv_Tabla_Producto.Name = "dgv_Tabla_Producto"
         Me.dgv_Tabla_Producto.ReadOnly = True
         Me.dgv_Tabla_Producto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_Tabla_Producto.Size = New System.Drawing.Size(725, 562)
+        Me.dgv_Tabla_Producto.Size = New System.Drawing.Size(599, 505)
         Me.dgv_Tabla_Producto.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(26, 38)
+        Me.Label1.Location = New System.Drawing.Point(13, 112)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(246, 25)
         Me.Label1.TabIndex = 1
@@ -83,7 +84,7 @@ Partial Class Form_Registro_Producto
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(786, 77)
+        Me.Label2.Location = New System.Drawing.Point(671, 120)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(175, 25)
         Me.Label2.TabIndex = 2
@@ -93,7 +94,7 @@ Partial Class Form_Registro_Producto
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(844, 135)
+        Me.Label3.Location = New System.Drawing.Point(729, 178)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(117, 25)
         Me.Label3.TabIndex = 3
@@ -103,7 +104,7 @@ Partial Class Form_Registro_Producto
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(844, 188)
+        Me.Label4.Location = New System.Drawing.Point(729, 231)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(117, 25)
         Me.Label4.TabIndex = 4
@@ -113,7 +114,7 @@ Partial Class Form_Registro_Producto
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(867, 251)
+        Me.Label5.Location = New System.Drawing.Point(752, 294)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(94, 25)
         Me.Label5.TabIndex = 5
@@ -123,7 +124,7 @@ Partial Class Form_Registro_Producto
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(828, 312)
+        Me.Label6.Location = New System.Drawing.Point(713, 355)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(133, 25)
         Me.Label6.TabIndex = 6
@@ -133,7 +134,7 @@ Partial Class Form_Registro_Producto
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(756, 376)
+        Me.Label7.Location = New System.Drawing.Point(641, 419)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(205, 25)
         Me.Label7.TabIndex = 7
@@ -143,7 +144,7 @@ Partial Class Form_Registro_Producto
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(743, 442)
+        Me.Label8.Location = New System.Drawing.Point(628, 485)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(218, 25)
         Me.Label8.TabIndex = 8
@@ -153,7 +154,7 @@ Partial Class Form_Registro_Producto
         '
         Me.lbl_Total_Productos.AutoSize = True
         Me.lbl_Total_Productos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Total_Productos.Location = New System.Drawing.Point(594, 653)
+        Me.lbl_Total_Productos.Location = New System.Drawing.Point(485, 659)
         Me.lbl_Total_Productos.Name = "lbl_Total_Productos"
         Me.lbl_Total_Productos.Size = New System.Drawing.Size(106, 16)
         Me.lbl_Total_Productos.TabIndex = 9
@@ -162,31 +163,31 @@ Partial Class Form_Registro_Producto
         'txt_Buscar
         '
         Me.txt_Buscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Buscar.Location = New System.Drawing.Point(278, 38)
+        Me.txt_Buscar.Location = New System.Drawing.Point(265, 112)
         Me.txt_Buscar.Name = "txt_Buscar"
-        Me.txt_Buscar.Size = New System.Drawing.Size(265, 26)
+        Me.txt_Buscar.Size = New System.Drawing.Size(192, 26)
         Me.txt_Buscar.TabIndex = 10
         '
         'txt_Id
         '
         Me.txt_Id.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Id.Location = New System.Drawing.Point(967, 77)
+        Me.txt_Id.Location = New System.Drawing.Point(852, 120)
         Me.txt_Id.Name = "txt_Id"
-        Me.txt_Id.Size = New System.Drawing.Size(337, 26)
+        Me.txt_Id.Size = New System.Drawing.Size(118, 26)
         Me.txt_Id.TabIndex = 11
         '
         'txt_Nombre
         '
         Me.txt_Nombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Nombre.Location = New System.Drawing.Point(967, 134)
+        Me.txt_Nombre.Location = New System.Drawing.Point(852, 177)
         Me.txt_Nombre.Name = "txt_Nombre"
-        Me.txt_Nombre.Size = New System.Drawing.Size(337, 26)
+        Me.txt_Nombre.Size = New System.Drawing.Size(183, 26)
         Me.txt_Nombre.TabIndex = 12
         '
         'txt_Compra
         '
         Me.txt_Compra.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Compra.Location = New System.Drawing.Point(967, 189)
+        Me.txt_Compra.Location = New System.Drawing.Point(852, 232)
         Me.txt_Compra.Name = "txt_Compra"
         Me.txt_Compra.Size = New System.Drawing.Size(118, 26)
         Me.txt_Compra.TabIndex = 13
@@ -194,7 +195,7 @@ Partial Class Form_Registro_Producto
         'txt_Venta
         '
         Me.txt_Venta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Venta.Location = New System.Drawing.Point(967, 250)
+        Me.txt_Venta.Location = New System.Drawing.Point(852, 293)
         Me.txt_Venta.Name = "txt_Venta"
         Me.txt_Venta.Size = New System.Drawing.Size(118, 26)
         Me.txt_Venta.TabIndex = 14
@@ -202,7 +203,7 @@ Partial Class Form_Registro_Producto
         'txt_Cantidad
         '
         Me.txt_Cantidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Cantidad.Location = New System.Drawing.Point(967, 313)
+        Me.txt_Cantidad.Location = New System.Drawing.Point(852, 356)
         Me.txt_Cantidad.Name = "txt_Cantidad"
         Me.txt_Cantidad.Size = New System.Drawing.Size(118, 26)
         Me.txt_Cantidad.TabIndex = 15
@@ -214,7 +215,7 @@ Partial Class Form_Registro_Producto
         Me.cBox_Tipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic)
         Me.cBox_Tipo.FormattingEnabled = True
         Me.cBox_Tipo.Items.AddRange(New Object() {"SALON", "VENTA"})
-        Me.cBox_Tipo.Location = New System.Drawing.Point(967, 376)
+        Me.cBox_Tipo.Location = New System.Drawing.Point(852, 419)
         Me.cBox_Tipo.Name = "cBox_Tipo"
         Me.cBox_Tipo.Size = New System.Drawing.Size(147, 28)
         Me.cBox_Tipo.TabIndex = 16
@@ -222,47 +223,67 @@ Partial Class Form_Registro_Producto
         'dtp_Fecha
         '
         Me.dtp_Fecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic)
-        Me.dtp_Fecha.Location = New System.Drawing.Point(967, 441)
+        Me.dtp_Fecha.Location = New System.Drawing.Point(852, 484)
         Me.dtp_Fecha.Name = "dtp_Fecha"
-        Me.dtp_Fecha.Size = New System.Drawing.Size(305, 26)
+        Me.dtp_Fecha.Size = New System.Drawing.Size(286, 26)
         Me.dtp_Fecha.TabIndex = 17
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Evah_s_Nails.My.Resources.Resources.logo
-        Me.PictureBox1.Location = New System.Drawing.Point(31, 648)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 659)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(125, 73)
+        Me.PictureBox1.Size = New System.Drawing.Size(141, 80)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 18
         Me.PictureBox1.TabStop = False
         '
         'btn_Guardar
         '
+        Me.btn_Guardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.btn_Guardar.Font = New System.Drawing.Font("Modern No. 20", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Guardar.Location = New System.Drawing.Point(872, 551)
+        Me.btn_Guardar.Image = Global.Evah_s_Nails.My.Resources.Resources.icono_agregar
+        Me.btn_Guardar.Location = New System.Drawing.Point(779, 552)
         Me.btn_Guardar.Name = "btn_Guardar"
-        Me.btn_Guardar.Size = New System.Drawing.Size(343, 88)
+        Me.btn_Guardar.Size = New System.Drawing.Size(220, 88)
         Me.btn_Guardar.TabIndex = 19
         Me.btn_Guardar.Text = "GUARDAR"
-        Me.btn_Guardar.UseVisualStyleBackColor = True
+        Me.btn_Guardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_Guardar.UseVisualStyleBackColor = False
         '
         'btn_Editar
         '
-        Me.btn_Editar.Font = New System.Drawing.Font("Goudy Old Style", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Editar.Location = New System.Drawing.Point(585, 38)
+        Me.btn_Editar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btn_Editar.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Editar.Image = Global.Evah_s_Nails.My.Resources.Resources.icono_editar
+        Me.btn_Editar.Location = New System.Drawing.Point(463, 86)
         Me.btn_Editar.Name = "btn_Editar"
-        Me.btn_Editar.Size = New System.Drawing.Size(145, 33)
+        Me.btn_Editar.Size = New System.Drawing.Size(148, 62)
         Me.btn_Editar.TabIndex = 20
         Me.btn_Editar.Text = "Editar Producto"
-        Me.btn_Editar.UseVisualStyleBackColor = True
+        Me.btn_Editar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_Editar.UseVisualStyleBackColor = False
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Plum
+        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label9.Font = New System.Drawing.Font("Geometr706 BlkCn BT", 26.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(366, 21)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(415, 44)
+        Me.Label9.TabIndex = 23
+        Me.Label9.Text = "RESGISTRO   DE   PRODUCTOS"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Form_Registro_Producto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Thistle
-        Me.ClientSize = New System.Drawing.Size(1364, 710)
+        Me.ClientSize = New System.Drawing.Size(1150, 714)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.btn_Editar)
         Me.Controls.Add(Me.btn_Guardar)
         Me.Controls.Add(Me.PictureBox1)
@@ -284,6 +305,7 @@ Partial Class Form_Registro_Producto
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dgv_Tabla_Producto)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Form_Registro_Producto"
@@ -318,4 +340,5 @@ Partial Class Form_Registro_Producto
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btn_Guardar As Button
     Friend WithEvents btn_Editar As Button
+    Friend WithEvents Label9 As Label
 End Class

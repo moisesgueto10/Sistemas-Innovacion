@@ -37,11 +37,12 @@ Partial Class Form_Registro_Cliente
         Me.FechaRegistroDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ClientesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Evahs_NailsDataSet = New Evah_s_Nails.Evahs_NailsDataSet()
-        Me.btn_Nuevo = New System.Windows.Forms.Button()
-        Me.btn_Editar = New System.Windows.Forms.Button()
         Me.lbl_TotalRegistros = New System.Windows.Forms.Label()
         Me.ClientesTableAdapter = New Evah_s_Nails.Evahs_NailsDataSetTableAdapters.ClientesTableAdapter()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btn_Editar = New System.Windows.Forms.Button()
+        Me.btn_Nuevo = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.data_TablaClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Evahs_NailsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,10 +52,10 @@ Partial Class Form_Registro_Cliente
         'lbl_BuscarCliente
         '
         Me.lbl_BuscarCliente.AutoSize = True
-        Me.lbl_BuscarCliente.Font = New System.Drawing.Font("Articulate", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_BuscarCliente.Location = New System.Drawing.Point(236, 92)
+        Me.lbl_BuscarCliente.Font = New System.Drawing.Font("Articulate", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_BuscarCliente.Location = New System.Drawing.Point(281, 126)
         Me.lbl_BuscarCliente.Name = "lbl_BuscarCliente"
-        Me.lbl_BuscarCliente.Size = New System.Drawing.Size(168, 23)
+        Me.lbl_BuscarCliente.Size = New System.Drawing.Size(209, 29)
         Me.lbl_BuscarCliente.TabIndex = 0
         Me.lbl_BuscarCliente.Text = "BUSCAR CLIENTE:"
         '
@@ -62,9 +63,9 @@ Partial Class Form_Registro_Cliente
         '
         Me.txt_Buscar.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_Buscar.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.txt_Buscar.Location = New System.Drawing.Point(407, 90)
+        Me.txt_Buscar.Location = New System.Drawing.Point(485, 127)
         Me.txt_Buscar.Name = "txt_Buscar"
-        Me.txt_Buscar.Size = New System.Drawing.Size(342, 26)
+        Me.txt_Buscar.Size = New System.Drawing.Size(350, 26)
         Me.txt_Buscar.TabIndex = 1
         '
         'data_TablaClientes
@@ -98,7 +99,7 @@ Partial Class Form_Registro_Cliente
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.data_TablaClientes.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.data_TablaClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.data_TablaClientes.Size = New System.Drawing.Size(1121, 534)
+        Me.data_TablaClientes.Size = New System.Drawing.Size(931, 534)
         Me.data_TablaClientes.TabIndex = 2
         '
         'IdClienteDataGridViewTextBoxColumn
@@ -153,31 +154,11 @@ Partial Class Form_Registro_Cliente
         Me.Evahs_NailsDataSet.DataSetName = "Evahs_NailsDataSet"
         Me.Evahs_NailsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'btn_Nuevo
-        '
-        Me.btn_Nuevo.Font = New System.Drawing.Font("Swis721 Blk BT", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Nuevo.Location = New System.Drawing.Point(1151, 169)
-        Me.btn_Nuevo.Name = "btn_Nuevo"
-        Me.btn_Nuevo.Size = New System.Drawing.Size(189, 57)
-        Me.btn_Nuevo.TabIndex = 3
-        Me.btn_Nuevo.Text = "NUEVO"
-        Me.btn_Nuevo.UseVisualStyleBackColor = True
-        '
-        'btn_Editar
-        '
-        Me.btn_Editar.Font = New System.Drawing.Font("Swis721 Blk BT", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Editar.Location = New System.Drawing.Point(1151, 266)
-        Me.btn_Editar.Name = "btn_Editar"
-        Me.btn_Editar.Size = New System.Drawing.Size(189, 57)
-        Me.btn_Editar.TabIndex = 4
-        Me.btn_Editar.Text = "EDITAR"
-        Me.btn_Editar.UseVisualStyleBackColor = True
-        '
         'lbl_TotalRegistros
         '
         Me.lbl_TotalRegistros.AutoSize = True
         Me.lbl_TotalRegistros.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_TotalRegistros.Location = New System.Drawing.Point(1139, 687)
+        Me.lbl_TotalRegistros.Location = New System.Drawing.Point(790, 706)
         Me.lbl_TotalRegistros.Name = "lbl_TotalRegistros"
         Me.lbl_TotalRegistros.Size = New System.Drawing.Size(119, 16)
         Me.lbl_TotalRegistros.TabIndex = 5
@@ -192,17 +173,57 @@ Partial Class Form_Registro_Cliente
         Me.PictureBox1.Image = Global.Evah_s_Nails.My.Resources.Resources.logo
         Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(170, 125)
+        Me.PictureBox1.Size = New System.Drawing.Size(260, 140)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
+        '
+        'btn_Editar
+        '
+        Me.btn_Editar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btn_Editar.Font = New System.Drawing.Font("Swis721 Blk BT", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Editar.Image = Global.Evah_s_Nails.My.Resources.Resources.icono_editar
+        Me.btn_Editar.Location = New System.Drawing.Point(949, 266)
+        Me.btn_Editar.Name = "btn_Editar"
+        Me.btn_Editar.Size = New System.Drawing.Size(189, 57)
+        Me.btn_Editar.TabIndex = 4
+        Me.btn_Editar.Text = "EDITAR"
+        Me.btn_Editar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_Editar.UseVisualStyleBackColor = False
+        '
+        'btn_Nuevo
+        '
+        Me.btn_Nuevo.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btn_Nuevo.Font = New System.Drawing.Font("Swis721 Blk BT", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Nuevo.Image = Global.Evah_s_Nails.My.Resources.Resources.icono_agregar
+        Me.btn_Nuevo.Location = New System.Drawing.Point(949, 169)
+        Me.btn_Nuevo.Name = "btn_Nuevo"
+        Me.btn_Nuevo.Size = New System.Drawing.Size(189, 57)
+        Me.btn_Nuevo.TabIndex = 3
+        Me.btn_Nuevo.Text = "NUEVO"
+        Me.btn_Nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_Nuevo.UseVisualStyleBackColor = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Plum
+        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label5.Font = New System.Drawing.Font("Geometr706 BlkCn BT", 26.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(407, 12)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(376, 44)
+        Me.Label5.TabIndex = 23
+        Me.Label5.Text = "RESGISTRO   DE   CLIENTES"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Form_Registro_Cliente
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.Thistle
-        Me.ClientSize = New System.Drawing.Size(1360, 706)
+        Me.ClientSize = New System.Drawing.Size(1150, 714)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lbl_TotalRegistros)
         Me.Controls.Add(Me.btn_Editar)
@@ -210,7 +231,7 @@ Partial Class Form_Registro_Cliente
         Me.Controls.Add(Me.data_TablaClientes)
         Me.Controls.Add(Me.txt_Buscar)
         Me.Controls.Add(Me.lbl_BuscarCliente)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimumSize = New System.Drawing.Size(850, 520)
@@ -243,4 +264,5 @@ Partial Class Form_Registro_Cliente
     Friend WithEvents IdentificacionDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents FechaRegistroDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label5 As Label
 End Class

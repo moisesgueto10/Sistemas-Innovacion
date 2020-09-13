@@ -14,3 +14,4 @@ C:\Users\Angel\Desktop\Evahs Nails\Sistema Evahs Nails\Evah´s Nails\obj\Debug\E
 C:\Users\Angel\Desktop\Evahs Nails\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Editar_Cliente.resources
 C:\Users\Angel\Desktop\Evahs Nails\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Registro_Servicios.resources
 C:\Users\Angel\Desktop\Evahs Nails\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Registro_Producto.resources
+C:\Users\Angel\Desktop\Evahs Nails\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Main.resources

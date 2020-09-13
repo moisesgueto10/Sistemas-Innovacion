@@ -37,6 +37,46 @@ Evah´s Nails
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Evah_s_Nails.My.Resources.Resources.icono_agregar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Evah_s_Nails.My.Resources.Resources.icono_clientes">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Evah_s_Nails.My.Resources.Resources.icono_editar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Evah_s_Nails.My.Resources.Resources.icono_productos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Evah_s_Nails.My.Resources.Resources.icono_reportes">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Evah_s_Nails.My.Resources.Resources.icono_servicios">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Evah_s_Nails.My.Resources.Resources.icono_usuarios">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Evah_s_Nails.My.Resources.Resources.icono_ventas">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Evah_s_Nails.My.Resources.Resources.logo">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

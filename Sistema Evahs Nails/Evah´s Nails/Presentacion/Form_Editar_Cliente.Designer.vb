@@ -36,6 +36,8 @@ Partial Class Form_Editar_Cliente
         Me.btn_Editar = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.box_Fecha_Registro = New System.Windows.Forms.DateTimePicker()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -134,13 +136,16 @@ Partial Class Form_Editar_Cliente
         '
         'btn_Editar
         '
+        Me.btn_Editar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.btn_Editar.Font = New System.Drawing.Font("Signika", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Editar.Location = New System.Drawing.Point(77, 376)
+        Me.btn_Editar.Image = Global.Evah_s_Nails.My.Resources.Resources.icono_editar
+        Me.btn_Editar.Location = New System.Drawing.Point(213, 370)
         Me.btn_Editar.Name = "btn_Editar"
-        Me.btn_Editar.Size = New System.Drawing.Size(265, 53)
+        Me.btn_Editar.Size = New System.Drawing.Size(189, 53)
         Me.btn_Editar.TabIndex = 10
-        Me.btn_Editar.Text = "EDITAR"
-        Me.btn_Editar.UseVisualStyleBackColor = True
+        Me.btn_Editar.Text = "    EDITAR"
+        Me.btn_Editar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_Editar.UseVisualStyleBackColor = False
         '
         'Label6
         '
@@ -160,12 +165,23 @@ Partial Class Form_Editar_Cliente
         Me.box_Fecha_Registro.Size = New System.Drawing.Size(200, 20)
         Me.box_Fecha_Registro.TabIndex = 12
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Evah_s_Nails.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(-24, 351)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(227, 89)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 13
+        Me.PictureBox1.TabStop = False
+        '
         'Form_Editar_Cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Thistle
         Me.ClientSize = New System.Drawing.Size(414, 441)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.box_Fecha_Registro)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.btn_Editar)
@@ -184,6 +200,7 @@ Partial Class Form_Editar_Cliente
         Me.Name = "Form_Editar_Cliente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Editar Cliente"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -202,4 +219,5 @@ Partial Class Form_Editar_Cliente
     Friend WithEvents btn_Editar As Button
     Friend WithEvents Label6 As Label
     Friend WithEvents box_Fecha_Registro As DateTimePicker
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
