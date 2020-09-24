@@ -17,3 +17,28 @@ C:\Users\Angel\Desktop\Evahs Nails\Sistema Evahs Nails\Evah´s Nails\obj\Debug\E
 C:\Users\Angel\Desktop\Evahs Nails\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Main.resources
 C:\Users\Angel\Desktop\Evahs Nails\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Registro_Usuarios.resources
 C:\Users\Angel\Desktop\Evahs Nails\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Registro_Ventas.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\bin\Debug\Evah´s Nails.exe
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\bin\Debug\Evah´s Nails.pdb
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\bin\Debug\Evah´s Nails.xml
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah´s Nails.vbprojAssemblyReference.cache
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Editar_Cliente.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Login.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Main.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Nuevo_Cliente.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Registro_Cliente.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Resources.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Registro_Producto.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Registro_Servicios.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Registro_Usuarios.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Registro_Ventas.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah´s Nails.vbproj.GenerateResource.cache
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah´s Nails.vbproj.CoreCompileInputs.cache
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah´s Nails.exe
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah´s Nails.xml
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah´s Nails.pdb
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\bin\Debug\Evah´s Nails.exe.config
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Registro_Venta.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Registro_Usuario.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Editar_Usuario.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Registro_Proveedores.resources
+C:\Users\hugom\Dropbox\Mi PC (LAPTOP-PE7JLK60)\Desktop\Nueva carpeta\Sistema Evahs Nails\Evah´s Nails\obj\Debug\Evah_s_Nails.Form_Editar_Proveedores.resources

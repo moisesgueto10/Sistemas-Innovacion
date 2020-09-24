@@ -23,4 +23,8 @@
             MsgBox("NO SE REALIZO EL REGISTRO")
         End Try
     End Sub
+
+    Private Sub Form_Nuevo_Cliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

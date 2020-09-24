@@ -52,10 +52,10 @@ Partial Class Form_Registro_Cliente
         'lbl_BuscarCliente
         '
         Me.lbl_BuscarCliente.AutoSize = True
-        Me.lbl_BuscarCliente.Font = New System.Drawing.Font("Articulate", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_BuscarCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_BuscarCliente.Location = New System.Drawing.Point(281, 126)
         Me.lbl_BuscarCliente.Name = "lbl_BuscarCliente"
-        Me.lbl_BuscarCliente.Size = New System.Drawing.Size(209, 29)
+        Me.lbl_BuscarCliente.Size = New System.Drawing.Size(240, 29)
         Me.lbl_BuscarCliente.TabIndex = 0
         Me.lbl_BuscarCliente.Text = "BUSCAR CLIENTE:"
         '
@@ -63,7 +63,7 @@ Partial Class Form_Registro_Cliente
         '
         Me.txt_Buscar.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_Buscar.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.txt_Buscar.Location = New System.Drawing.Point(485, 127)
+        Me.txt_Buscar.Location = New System.Drawing.Point(527, 126)
         Me.txt_Buscar.Name = "txt_Buscar"
         Me.txt_Buscar.Size = New System.Drawing.Size(350, 26)
         Me.txt_Buscar.TabIndex = 1
@@ -181,7 +181,7 @@ Partial Class Form_Registro_Cliente
         'btn_Editar
         '
         Me.btn_Editar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.btn_Editar.Font = New System.Drawing.Font("Swis721 Blk BT", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Editar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Editar.Image = Global.Evah_s_Nails.My.Resources.Resources.icono_editar
         Me.btn_Editar.Location = New System.Drawing.Point(949, 266)
         Me.btn_Editar.Name = "btn_Editar"
@@ -194,7 +194,7 @@ Partial Class Form_Registro_Cliente
         'btn_Nuevo
         '
         Me.btn_Nuevo.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.btn_Nuevo.Font = New System.Drawing.Font("Swis721 Blk BT", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Nuevo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Nuevo.Image = Global.Evah_s_Nails.My.Resources.Resources.icono_agregar
         Me.btn_Nuevo.Location = New System.Drawing.Point(949, 169)
         Me.btn_Nuevo.Name = "btn_Nuevo"
@@ -209,10 +209,10 @@ Partial Class Form_Registro_Cliente
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Plum
         Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label5.Font = New System.Drawing.Font("Geometr706 BlkCn BT", 26.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(407, 12)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(376, 44)
+        Me.Label5.Size = New System.Drawing.Size(492, 41)
         Me.Label5.TabIndex = 23
         Me.Label5.Text = "RESGISTRO   DE   CLIENTES"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter

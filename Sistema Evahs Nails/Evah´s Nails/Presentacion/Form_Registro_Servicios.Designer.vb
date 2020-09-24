@@ -93,23 +93,23 @@ Partial Class Form_Registro_Servicios
         '
         'txt_Id
         '
-        Me.txt_Id.Font = New System.Drawing.Font("Swis721 Ex BT", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Id.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_Id.Location = New System.Drawing.Point(176, 256)
         Me.txt_Id.Name = "txt_Id"
-        Me.txt_Id.Size = New System.Drawing.Size(183, 30)
+        Me.txt_Id.Size = New System.Drawing.Size(183, 29)
         Me.txt_Id.TabIndex = 4
         '
         'txt_Nombre
         '
-        Me.txt_Nombre.Font = New System.Drawing.Font("Swis721 Ex BT", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Nombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_Nombre.Location = New System.Drawing.Point(176, 351)
         Me.txt_Nombre.Name = "txt_Nombre"
-        Me.txt_Nombre.Size = New System.Drawing.Size(183, 30)
+        Me.txt_Nombre.Size = New System.Drawing.Size(183, 29)
         Me.txt_Nombre.TabIndex = 5
         '
         'txt_Descripcion
         '
-        Me.txt_Descripcion.Font = New System.Drawing.Font("Swis721 Ex BT", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Descripcion.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_Descripcion.Location = New System.Drawing.Point(24, 460)
         Me.txt_Descripcion.Multiline = True
         Me.txt_Descripcion.Name = "txt_Descripcion"
@@ -118,10 +118,10 @@ Partial Class Form_Registro_Servicios
         '
         'txt_Buscar_Servicio
         '
-        Me.txt_Buscar_Servicio.Font = New System.Drawing.Font("Swis721 Ex BT", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Buscar_Servicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_Buscar_Servicio.Location = New System.Drawing.Point(649, 110)
         Me.txt_Buscar_Servicio.Name = "txt_Buscar_Servicio"
-        Me.txt_Buscar_Servicio.Size = New System.Drawing.Size(311, 30)
+        Me.txt_Buscar_Servicio.Size = New System.Drawing.Size(311, 29)
         Me.txt_Buscar_Servicio.TabIndex = 7
         Me.txt_Buscar_Servicio.Tag = ""
         '
@@ -143,7 +143,7 @@ Partial Class Form_Registro_Servicios
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Navy
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgv_Tabla_Servicios.DefaultCellStyle = DataGridViewCellStyle1
-        Me.dgv_Tabla_Servicios.Location = New System.Drawing.Point(378, 148)
+        Me.dgv_Tabla_Servicios.Location = New System.Drawing.Point(378, 214)
         Me.dgv_Tabla_Servicios.MultiSelect = False
         Me.dgv_Tabla_Servicios.Name = "dgv_Tabla_Servicios"
         Me.dgv_Tabla_Servicios.ReadOnly = True
@@ -237,10 +237,10 @@ Partial Class Form_Registro_Servicios
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Plum
         Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label5.Font = New System.Drawing.Font("Geometr706 BlkCn BT", 26.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(371, 9)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(394, 44)
+        Me.Label5.Size = New System.Drawing.Size(511, 41)
         Me.Label5.TabIndex = 22
         Me.Label5.Text = "RESGISTRO   DE   SERVICIOS"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter

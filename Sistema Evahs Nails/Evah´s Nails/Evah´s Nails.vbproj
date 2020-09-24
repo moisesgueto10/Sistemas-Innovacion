@@ -86,6 +86,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Evahs_NailsDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Evahs_NailsDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Evahs_NailsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Evahs_NailsDataSet2.vb">
+      <DependentUpon>Evahs_NailsDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Funciones\FConexion.vb" />
     <Compile Include="Funciones\FMostrarClientes.vb" />
     <Compile Include="Funciones\FMostrarServicios.vb" />
@@ -98,6 +106,18 @@
       <DependentUpon>Form_Editar_Cliente.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Form_Editar_Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Form_Editar_Proveedores.Designer.vb">
+      <DependentUpon>Form_Editar_Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Form_Editar_Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Form_Editar_Usuario.Designer.vb">
+      <DependentUpon>Form_Editar_Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Form_Editar_Usuario.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\Form_Login.Designer.vb">
@@ -152,10 +172,28 @@
     <Compile Include="Presentacion\Form_Registro_Servicios.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\Form_Registro_Proveedores.Designer.vb">
+      <DependentUpon>Form_Registro_Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Form_Registro_Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Form_Registro_Usuario.Designer.vb">
+      <DependentUpon>Form_Registro_Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Form_Registro_Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\Form_Registro_Usuarios.Designer.vb">
       <DependentUpon>Form_Registro_Usuarios.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Form_Registro_Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Form_Registro_Venta.Designer.vb">
+      <DependentUpon>Form_Registro_Venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Form_Registro_Venta.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\Form_Registro_Ventas.Designer.vb">
@@ -168,6 +206,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Presentacion\Form_Editar_Cliente.resx">
       <DependentUpon>Form_Editar_Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Form_Editar_Proveedores.resx">
+      <DependentUpon>Form_Editar_Proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Form_Editar_Usuario.resx">
+      <DependentUpon>Form_Editar_Usuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Form_Login.resx">
       <DependentUpon>Form_Login.vb</DependentUpon>
@@ -193,14 +237,24 @@
     <EmbeddedResource Include="Presentacion\Form_Registro_Servicios.resx">
       <DependentUpon>Form_Registro_Servicios.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Form_Registro_Proveedores.resx">
+      <DependentUpon>Form_Registro_Proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Form_Registro_Usuario.resx">
+      <DependentUpon>Form_Registro_Usuario.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Form_Registro_Usuarios.resx">
       <DependentUpon>Form_Registro_Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Form_Registro_Venta.resx">
+      <DependentUpon>Form_Registro_Venta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Form_Registro_Ventas.resx">
       <DependentUpon>Form_Registro_Ventas.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Evahs_NailsDataSet.xsc">
       <DependentUpon>Evahs_NailsDataSet.xsd</DependentUpon>
     </None>
@@ -222,6 +276,17 @@
     </None>
     <None Include="Evahs_NailsDataSet1.xss">
       <DependentUpon>Evahs_NailsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Evahs_NailsDataSet2.xsc">
+      <DependentUpon>Evahs_NailsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Evahs_NailsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Evahs_NailsDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Evahs_NailsDataSet2.xss">
+      <DependentUpon>Evahs_NailsDataSet2.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

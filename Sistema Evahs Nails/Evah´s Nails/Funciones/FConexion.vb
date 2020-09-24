@@ -2,10 +2,32 @@
 
 Public Class FConexion
     Protected cnn As New SqlConnection
+    Dim cs As String = "Data Source=LAPTOP-PE7JLK60\SQLEXPRESS;Initial Catalog=Evahs_Nails;Integrated Security=True"
+    Public Function Consultas(ByVal Comando As String) As DataSet
+        Dim dsa As New DataSet
+        Dim sqlCnn As New SqlConnection(cs)
+        Dim da As New SqlDataAdapter(Comando, sqlCnn)
 
+        da.Fill(dsa)
+        Consultas = dsa
+
+        dsa.Dispose()
+        sqlCnn.Dispose()
+        da.Dispose()
+    End Function
+    Public Function Modificaciones(ByVal Comando As String) As Boolean
+
+        Dim sqlCnn As New SqlConnection(cs)
+        Dim sqlCm As New SqlCommand(Comando, sqlCnn)
+        sqlCnn.Open()
+        sqlCm.ExecuteNonQuery()
+        sqlCnn.Dispose()
+        sqlCm.Dispose()
+        Modificaciones = True
+    End Function
     Public Function FnConectado()
         Try
-            cnn = New SqlConnection("Data Source=DESKTOP-S193138\SQLEXPRESS; Initial Catalog=Evahs_Nails; Integrated Security=true")
+            cnn = New SqlConnection("Data Source=LAPTOP-PE7JLK60\SQLEXPRESS; Initial Catalog=Evahs_Nails; Integrated Security=true")
             cnn.Open()
             Return True
         Catch ex As Exception
